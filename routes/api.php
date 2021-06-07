@@ -30,3 +30,14 @@ Route::group(['prefix' => 'DatosMaestros'], function() {
     Route::get('GetFlotasxHacienda', 'DatosMaestrosController@GetFlotasxHacienda');
     Route::get('GetMotivosDeRechazo', 'DatosMaestrosController@GetMotivosDeRechazo');
 });
+
+//CRUDPRODUCTOS
+Route::group(['prefix' => 'Productos'], function() {
+    Route::get('ObtenerProductos', 'ProductoController@GetProductos');
+  
+});
+//CRUDPROVEEDOR
+Route::group(['prefix' => 'Proveedor'], function() {
+    Route::get('ObtenerProveedor', 'ProveedorController@GetProveedor');
+  
+});
